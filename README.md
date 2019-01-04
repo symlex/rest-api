@@ -1,7 +1,6 @@
 # REST API
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://travis-ci.org/symlex/stream-sampler.png?branch=master)](https://travis-ci.org/symlex/stream-sampler)
 [![Documentation](https://readthedocs.org/projects/symlex-docs/badge/?version=latest&style=flat)](https://docs.symlex.org/en/latest/)
 
 This is an example REST API application based on [Symlex Core](https://github.com/symlex/symlex-core).
