@@ -3,7 +3,7 @@
     "license": "MIT",
     "type": "project",
     "description": "Example REST API application based on Symlex Core",
-    "homepage": "https://github.com/phpbenchmarks/symlex",
+    "homepage": "https://github.com/symlex/rest-api/",
     "authors": [
         {
             "name": "Michael Mayer",
