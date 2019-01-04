@@ -1,11 +1,7 @@
-# REST API
+# Example REST API based on [Symlex Core](https://github.com/symlex/symlex-core)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Documentation](https://readthedocs.org/projects/symlex-docs/badge/?version=latest&style=flat)](https://docs.symlex.org/en/latest/)
-
-This is an example REST API application based on [Symlex Core](https://github.com/symlex/symlex-core).
-
-## Setup ##
 
 Before you start, make sure you have PHP 7.1+, [Composer](https://getcomposer.org/) and [Docker](https://www.docker.com/) installed on your system 
 ([howto](https://docs.symlex.org/en/latest/osx/) for Mac OS X).
