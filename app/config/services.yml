@@ -1,0 +1,4 @@
+services:
+    controller.rest.example:
+        class: App\Controller\ExampleController
+        public: true

@@ -1,0 +1,49 @@
+{
+    "name": "symlex/rest-api",
+    "license": "MIT",
+    "type": "project",
+    "description": "Example REST API application based on Symlex Core",
+    "homepage": "https://github.com/phpbenchmarks/symlex",
+    "authors": [
+        {
+            "name": "Michael Mayer",
+            "email": "michael@liquidbytes.net",
+            "homepage": "https://liquidbytes.net/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "symlex/symlex-core": "^4.1",
+        "incenteev/composer-parameter-handler": "^2.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "scripts": {
+        "post-composer-scripts": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "app/clearcache",
+            "composer dumpautoload -o"
+        ],
+        "post-install-cmd": [
+            "@post-composer-scripts"
+        ],
+        "post-update-cmd": [
+            "@post-composer-scripts"
+        ]
+    },
+    "extra": {
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml",
+            "dist-file": "app/config/parameters.dist.yml"
+        }
+    }
+}

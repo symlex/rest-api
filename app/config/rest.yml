@@ -1,0 +1,23 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: common.yml }
+    - { resource: exceptions.yml }
+
+services:
+    app:
+        class: Symlex\Application\Web
+        public: true
+
+    request:
+        class: Symfony\Component\HttpFoundation\Request
+        factory: [ 'Symfony\Component\HttpFoundation\Request', createFromGlobals ]
+
+    router.error:
+        class: Symlex\Router\Web\ErrorRouter
+        public: true
+        arguments: [ "@app", "@twig", "%exception.codes%", "%exception.messages%", "%app.debug%" ]
+
+    router.rest:
+        class: Symlex\Router\Web\RestRouter
+        public: true
+        arguments: [ "@app", "@service_container" ]

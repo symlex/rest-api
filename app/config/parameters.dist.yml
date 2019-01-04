@@ -1,0 +1,6 @@
+parameters:
+    app.name: 'App'
+    app.version: '1.0'
+    app.url: 'http://localhost:8088/'
+    app.email: 'root@localhost'
+    app.locale: en
