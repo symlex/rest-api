@@ -5,8 +5,6 @@
 
 This is an example REST API application based on [Symlex Core](https://github.com/symlex/symlex-core).
 
-*Note: https://github.com/symlex/symlex-core contains the kernel and routers as reusable components.*
-
 ## Setup ##
 
 Before you start, make sure you have PHP 7.1+, Composer and Docker installed on your system 
