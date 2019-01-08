@@ -36,6 +36,9 @@ in executing PHP from the host's file system.*
 
 To open a terminal, run `docker-compose exec php sh`.
 
+YAML files located in `app/config/` configure the entire system based on parameter and service definitions.
+The main config file is `app/config/rest.yml`.
+
 If you add `localhost-debug` to your `/etc/hosts` and access the site with that, it will load in debug
 mode (you'll see a stack trace and other debug information on the error pages).
 
