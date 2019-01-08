@@ -27,6 +27,11 @@ cd myapp
 docker-compose up
 ```
 
+*Note: This docker-compose configuration is for testing and development purposes only. 
+You might need to tweak it if you run Docker with a different user for security reasons.
+On OS X, the current release of Docker is [really slow](https://twitter.com/lastzero/status/829191426391027712) 
+in executing PHP from the host's file system.*
+
 **Step 3:** Open http://localhost:8088/example/123 in a browser ([source](src/Controller/ExampleController.php)).
 
 Our complete framework documentation can be found on [docs.symlex.org](https://docs.symlex.org/en/latest/).
