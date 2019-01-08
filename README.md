@@ -34,6 +34,11 @@ in executing PHP from the host's file system.*
 
 **Step 3:** Open http://localhost:8088/example/123 in a browser ([source](src/Controller/ExampleController.php)).
 
+To open a terminal, run `docker-compose exec php sh`.
+
+If you add `localhost-debug` to your `/etc/hosts` and access the site with that, it will load in debug
+mode (you'll see a stack trace and other debug information on the error pages).
+
 Our complete framework documentation can be found on [docs.symlex.org](https://docs.symlex.org/en/latest/).
 
 ## About ##
