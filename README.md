@@ -4,15 +4,21 @@
 [![Documentation](https://readthedocs.org/projects/symlex-docs/badge/?version=latest&style=flat)](https://docs.symlex.org/en/latest/)
 
 Before you start, make sure you have PHP 7.1+, [Composer](https://getcomposer.org/) and [Docker](https://www.docker.com/) installed on your system 
-([howto](https://docs.symlex.org/en/latest/osx/) for Mac OS X).
-Instead of using Docker, you can also setup your own runtime environment based on the existing 
-[Dockerfiles](https://github.com/symlex/rest-api/tree/master/app/docker) (not recommended).
+([howto](https://docs.symlex.org/en/latest/osx/) for Mac OS X). 
+Instead of using Docker, you can set up your own runtime environment based on the existing 
+[Dockerfiles](https://github.com/symlex/rest-api/tree/master/app/docker).
+We recommend using [Nginx](https://www.nginx.com/) with [PHP-FPM](http://php.net/manual/en/install.fpm.php)
+and URL [rewrite rules](https://github.com/symlex/symlex/blob/master/app/docker/nginx/site.conf) similar to Symfony.
 
 **Step 1:** Run `composer` to create a new project:
 
 ```
 composer create-project symlex/rest-api myapp
 ```
+
+Composer will ask for config values to generate `app/config/parameters.yml` for you.
+
+Make sure `storage/cache` is writable so that cache files can be created by the app.
 
 **Step 2:** Start nginx and PHP using `docker-compose`:
 
