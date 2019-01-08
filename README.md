@@ -33,7 +33,6 @@ On OS X, the current release of Docker is [really slow](https://twitter.com/last
 in executing PHP from the host's file system.*
 
 **Step 3:** Open http://localhost:8088/example/123 in a browser ([source](src/Controller/ExampleController.php)).
-
 To open a terminal, run `docker-compose exec php sh`.
 
 If you add `localhost-debug` to your `/etc/hosts` and access the site with that, it will load in debug
