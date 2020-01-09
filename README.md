@@ -4,12 +4,14 @@
 [![Documentation](https://readthedocs.org/projects/symlex-docs/badge/?version=latest&style=flat)](https://docs.symlex.org/en/latest/)
 [![Community Chat](https://badges.gitter.im/symlex/community.png)](https://gitter.im/symlex/community)
 
-Before you start, make sure you have PHP 7.1+, [Composer](https://getcomposer.org/) and [Docker](https://www.docker.com/) installed on your system 
+Before you start, make sure you have PHP 7.2+, [Composer](https://getcomposer.org/) and [Docker](https://www.docker.com/) installed on your system 
 ([howto](https://docs.symlex.org/en/latest/osx/) for Mac OS X). 
 Instead of using Docker, you can set up your own runtime environment based on the existing 
 [Dockerfiles](https://github.com/symlex/rest-api/tree/master/app/docker).
 We recommend using [Nginx](https://www.nginx.com/) with [PHP-FPM](http://php.net/manual/en/install.fpm.php)
 and URL [rewrite rules](https://github.com/symlex/symlex/blob/master/app/docker/nginx/site.conf) similar to Symfony.
+
+Our [main repository](https://github.com/symlex/symlex) shows how to use Symlex with RoadRunner for additional performance.
 
 **Step 1:** Run `composer` to create a new project:
 
@@ -61,3 +63,12 @@ Feel free to send an e-mail to [hello@symlex.org](mailto:hello@symlex.org) if yo
 need [commercial support](https://blog.liquidbytes.net/contact/) or just want to say hello. 
 We welcome contributions of any kind. If you have a bug or an idea, read our 
 [guide](https://docs.symlex.org/en/latest/contribute/) before opening an issue.
+
+
+## Donations ##
+
+Symlex is a non-profit project run entirely by volunteers. You're most welcome to support us via 
+[GitHub Sponsors](https://github.com/sponsors/lastzero), especially if you need help with using our software.
+They will match every donation in the first year.
+
+Please leave a star if you like this project, it provides additional motivation to keep going. Thank you very much! <3
